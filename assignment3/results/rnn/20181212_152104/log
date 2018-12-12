@@ -1,0 +1,95 @@
+2018-12-12 15:21:07,629:INFO: Building model...
+2018-12-12 15:21:13,215:INFO: took 5.59 seconds
+2018-12-12 15:21:14,543:INFO: Epoch 1 out of 10
+2018-12-12 15:22:59,117:INFO: Evaluating on development data
+2018-12-12 15:23:32,478:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2907.00 	66.00   	59.00   	7.00    	110.00  
+ORG     	478.00  	1068.00 	221.00  	115.00  	210.00  
+LOC     	188.00  	201.00  	1438.00 	99.00   	168.00  
+MISC    	133.00  	169.00  	68.00   	766.00  	132.00  
+O       	162.00  	92.00   	20.00   	35.00   	42450.00
+
+2018-12-12 15:23:32,478:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.98 	0.75 	0.92 	0.83 
+ORG  	0.97 	0.67 	0.51 	0.58 
+LOC  	0.98 	0.80 	0.69 	0.74 
+MISC 	0.99 	0.75 	0.60 	0.67 
+O    	0.98 	0.99 	0.99 	0.99 
+micro	0.98 	0.95 	0.95 	0.95 
+macro	0.98 	0.79 	0.74 	0.76 
+not-O	0.98 	0.75 	0.72 	0.73 
+
+2018-12-12 15:23:32,478:INFO: Entity level P/R/F1: 0.63/0.68/0.65
+2018-12-12 15:23:32,478:INFO: New best score! Saving model in results/rnn/20181212_152104/model.weights
+2018-12-12 15:23:33,255:INFO: Epoch 2 out of 10
+2018-12-12 15:25:10,898:INFO: Evaluating on development data
+2018-12-12 15:25:43,133:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2947.00 	47.00   	62.00   	12.00   	81.00   
+ORG     	296.00  	1320.00 	213.00  	86.00   	177.00  
+LOC     	119.00  	154.00  	1704.00 	40.00   	77.00   
+MISC    	79.00   	114.00  	75.00   	874.00  	126.00  
+O       	103.00  	79.00   	20.00   	38.00   	42519.00
+
+2018-12-12 15:25:43,134:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.98 	0.83 	0.94 	0.88 
+ORG  	0.98 	0.77 	0.63 	0.69 
+LOC  	0.99 	0.82 	0.81 	0.82 
+MISC 	0.99 	0.83 	0.69 	0.75 
+O    	0.99 	0.99 	0.99 	0.99 
+micro	0.98 	0.96 	0.96 	0.96 
+macro	0.98 	0.85 	0.81 	0.83 
+not-O	0.98 	0.82 	0.80 	0.81 
+
+2018-12-12 15:25:43,134:INFO: Entity level P/R/F1: 0.72/0.76/0.74
+2018-12-12 15:25:43,134:INFO: New best score! Saving model in results/rnn/20181212_152104/model.weights
+2018-12-12 15:25:43,864:INFO: Epoch 3 out of 10
+2018-12-12 15:27:18,945:INFO: Evaluating on development data
+2018-12-12 15:27:51,398:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2958.00 	37.00   	67.00   	17.00   	70.00   
+ORG     	205.00  	1496.00 	173.00  	76.00   	142.00  
+LOC     	72.00   	131.00  	1800.00 	29.00   	62.00   
+MISC    	57.00   	67.00   	69.00   	958.00  	117.00  
+O       	87.00   	78.00   	19.00   	40.00   	42535.00
+
+2018-12-12 15:27:51,398:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.88 	0.94 	0.91 
+ORG  	0.98 	0.83 	0.72 	0.77 
+LOC  	0.99 	0.85 	0.86 	0.85 
+MISC 	0.99 	0.86 	0.76 	0.80 
+O    	0.99 	0.99 	0.99 	0.99 
+micro	0.99 	0.97 	0.97 	0.97 
+macro	0.99 	0.88 	0.85 	0.86 
+not-O	0.99 	0.85 	0.84 	0.85 
+
+2018-12-12 15:27:51,398:INFO: Entity level P/R/F1: 0.77/0.81/0.79
+2018-12-12 15:27:51,398:INFO: New best score! Saving model in results/rnn/20181212_152104/model.weights
+2018-12-12 15:27:52,399:INFO: Epoch 4 out of 10
+2018-12-12 15:29:27,980:INFO: Evaluating on development data
+2018-12-12 15:30:03,769:DEBUG: Token-level confusion matrix:
+go\gu   	PER     	ORG     	LOC     	MISC    	O       
+PER     	2926.00 	56.00   	86.00   	15.00   	66.00   
+ORG     	139.00  	1601.00 	158.00  	55.00   	139.00  
+LOC     	53.00   	140.00  	1839.00 	18.00   	44.00   
+MISC    	39.00   	73.00   	68.00   	974.00  	114.00  
+O       	58.00   	73.00   	21.00   	36.00   	42571.00
+
+2018-12-12 15:30:03,769:DEBUG: Token-level scores:
+label	acc  	prec 	rec  	f1   
+PER  	0.99 	0.91 	0.93 	0.92 
+ORG  	0.98 	0.82 	0.77 	0.79 
+LOC  	0.99 	0.85 	0.88 	0.86 
+MISC 	0.99 	0.89 	0.77 	0.82 
+O    	0.99 	0.99 	1.00 	0.99 
+micro	0.99 	0.97 	0.97 	0.97 
+macro	0.99 	0.89 	0.87 	0.88 
+not-O	0.99 	0.87 	0.85 	0.86 
+
+2018-12-12 15:30:03,769:INFO: Entity level P/R/F1: 0.78/0.83/0.80
+2018-12-12 15:30:03,769:INFO: New best score! Saving model in results/rnn/20181212_152104/model.weights
+2018-12-12 15:30:04,568:INFO: Epoch 5 out of 10
